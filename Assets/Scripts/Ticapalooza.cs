@@ -19,8 +19,19 @@ public class Ticapalooza : MonoBehaviour
         int entradastotales;
         int capacidadcampo;
         int capacidadplatea;
-        capacidadplatea = 16200;
         capacidadcampo = 20400;
+        capacidadplatea = 16200;
+        if (entradascampo == 0 || entradasplatea == 0)
+        {
+            Debug.Log("ERROR");
+        }
+
+        else if (entradascampo >= capacidadcampo || entradasplatea >= capacidadplatea)
+        {
+            Debug.Log("ERROR");
+        }
+        
+        
         entradastotales = entradascampo + entradasplatea;
         capacidadtotal = 36600;
         entradasdisponibles = capacidadtotal - entradastotales;
@@ -52,16 +63,6 @@ public class Ticapalooza : MonoBehaviour
         else
         {
             Debug.Log("Debemos mejorar la convocatoria");
-        }
-
-        if (entradascampo == 0 || entradasplatea == 0)
-        {
-            Debug.Log("ERROR");
-        }
-
-        else if (entradascampo>= capacidadcampo || entradasplatea>= capacidadplatea)
-        {
-            Debug.Log("ERROR");
         }
 
     }
