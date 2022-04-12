@@ -24,11 +24,13 @@ public class Ticapalooza : MonoBehaviour
         if (entradascampo == 0 || entradasplatea == 0)
         {
             Debug.Log("ERROR");
+            return;
         }
 
         else if (entradascampo >= capacidadcampo || entradasplatea >= capacidadplatea)
         {
             Debug.Log("ERROR");
+            return;
         }
         
         
